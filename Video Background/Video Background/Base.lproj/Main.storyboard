@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Video_Background" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOI-gh-WUU">
+                                <rect key="frame" x="40" y="515" width="520" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="8eR-Ib-sh3"/>
+                                    <constraint firstAttribute="width" constant="550" id="bsl-A3-2cD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.0" green="0.7148699664" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bsl-A3-2cD"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5t-9s-cH1">
+                                <rect key="frame" x="40" y="452" width="520" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.71486996644295298" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="EO2-8L-ykD"/>
+                                    <constraint firstAttribute="width" constant="550" id="beZ-x5-c2r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Login"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="beZ-x5-c2r"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="login-secondary-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Wge-kI-1Kw">
+                                <rect key="frame" x="20" y="28" width="560" height="66"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S5t-9s-cH1" firstAttribute="width" secondItem="qOI-gh-WUU" secondAttribute="width" id="0Cl-QF-8yI"/>
+                            <constraint firstItem="Wge-kI-1Kw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Agh-XB-QY3"/>
+                            <constraint firstItem="S5t-9s-cH1" firstAttribute="trailing" secondItem="qOI-gh-WUU" secondAttribute="trailing" id="Dr3-tj-dgc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qOI-gh-WUU" secondAttribute="trailing" constant="20" id="EZX-hE-OFs"/>
+                            <constraint firstItem="qOI-gh-WUU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="GGR-d0-IOG"/>
+                            <constraint firstItem="Wge-kI-1Kw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="PMb-F7-exh"/>
+                            <constraint firstItem="S5t-9s-cH1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Wge-kI-1Kw" secondAttribute="bottom" constant="8" symbolic="YES" id="RpW-OP-Pz7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qOI-gh-WUU" secondAttribute="bottom" constant="30" id="ZBn-IS-hJM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wge-kI-1Kw" secondAttribute="trailing" id="mav-lQ-Fk5"/>
+                            <constraint firstItem="Wge-kI-1Kw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pI2-fm-zUZ"/>
+                            <constraint firstItem="qOI-gh-WUU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sce-Ar-osF"/>
+                            <constraint firstItem="S5t-9s-cH1" firstAttribute="leading" secondItem="qOI-gh-WUU" secondAttribute="leading" id="udF-AK-c1w"/>
+                            <constraint firstItem="qOI-gh-WUU" firstAttribute="top" secondItem="S5t-9s-cH1" secondAttribute="bottom" constant="8" symbolic="YES" id="vor-rE-yVA"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Cl-QF-8yI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="login" destination="S5t-9s-cH1" id="bj4-zk-7YD"/>
+                        <outlet property="signUp" destination="qOI-gh-WUU" id="h9n-DX-bQJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="361"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login-secondary-logo" width="218" height="66"/>
+    </resources>
+</document>

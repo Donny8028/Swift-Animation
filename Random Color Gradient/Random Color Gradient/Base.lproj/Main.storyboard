@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Random_Color_Gradient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V90-Uu-rT0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beh-HX-48L">
+                                        <rect key="frame" x="226" y="226" width="148" height="148"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="202" id="erT-nI-Jmt"/>
+                                        </constraints>
+                                        <state key="normal" image="music play"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="erT-nI-Jmt"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="startPlay" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCw-Nd-1h5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.093615658581256866" green="0.094678305089473724" blue="0.38611948490142822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Beh-HX-48L" firstAttribute="centerY" secondItem="V90-Uu-rT0" secondAttribute="centerY" id="OV1-bn-qiX"/>
+                                    <constraint firstItem="Beh-HX-48L" firstAttribute="centerX" secondItem="V90-Uu-rT0" secondAttribute="centerX" id="dhg-dK-djl"/>
+                                    <constraint firstItem="Beh-HX-48L" firstAttribute="leading" secondItem="V90-Uu-rT0" secondAttribute="leading" constant="200" id="uR8-hi-zdU"/>
+                                    <constraint firstItem="Beh-HX-48L" firstAttribute="top" secondItem="V90-Uu-rT0" secondAttribute="top" constant="225" id="v8l-07-GfA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="uR8-hi-zdU"/>
+                                        <exclude reference="v8l-07-GfA"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V90-Uu-rT0" secondAttribute="trailing" id="ZEe-r6-AOQ"/>
+                            <constraint firstItem="V90-Uu-rT0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eOk-uO-9DK"/>
+                            <constraint firstItem="V90-Uu-rT0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fzn-sS-Koa"/>
+                            <constraint firstItem="V90-Uu-rT0" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="uMt-c8-1pB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonView" destination="Beh-HX-48L" id="dEg-4m-eoZ"/>
+                        <outlet property="layoutView" destination="V90-Uu-rT0" id="izg-aq-ZVZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="359"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="music play" width="148" height="148"/>
+    </resources>
+</document>

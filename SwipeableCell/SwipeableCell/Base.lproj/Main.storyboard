@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E8U-Ff-RMH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="Xcc-a8-4Am">
+            <objects>
+                <tableViewController id="E8U-Ff-RMH" customClass="TableViewController" customModule="SwipeableCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZQ4-Nf-kIa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="71" id="zOC-4k-WDP" customClass="PatternTableViewCell" customModule="SwipeableCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="71"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zOC-4k-WDP" id="8La-FG-DW4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="twN-2w-IuY">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="AQg-ZE-jDu"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4I-f8-eV0">
+                                            <rect key="frame" x="108" y="21" width="51" height="28"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="twN-2w-IuY" firstAttribute="leading" secondItem="8La-FG-DW4" secondAttribute="leading" id="CD5-hQ-fJf"/>
+                                        <constraint firstItem="q4I-f8-eV0" firstAttribute="centerY" secondItem="twN-2w-IuY" secondAttribute="centerY" id="ERP-kB-Eqq"/>
+                                        <constraint firstItem="q4I-f8-eV0" firstAttribute="leading" secondItem="twN-2w-IuY" secondAttribute="trailing" constant="8" id="IGb-Qp-37G"/>
+                                        <constraint firstItem="twN-2w-IuY" firstAttribute="top" secondItem="8La-FG-DW4" secondAttribute="top" id="avC-uy-Dre"/>
+                                        <constraint firstAttribute="bottom" secondItem="twN-2w-IuY" secondAttribute="bottom" id="qIl-yG-xt5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.97240930795669556" green="0.97030097246170044" blue="0.88552641868591309" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="imageContainer" destination="twN-2w-IuY" id="Dic-Bd-KHn"/>
+                                    <outlet property="subject" destination="q4I-f8-eV0" id="k6g-1G-HRd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="E8U-Ff-RMH" id="EZ0-7B-gUL"/>
+                            <outlet property="delegate" destination="E8U-Ff-RMH" id="nbJ-gG-LSH"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keB-HA-6gy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="321"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="400" height="300"/>
+    </resources>
+</document>

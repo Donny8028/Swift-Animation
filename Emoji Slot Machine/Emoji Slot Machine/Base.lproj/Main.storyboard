@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Slot_Machine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace" translatesAutoresizingMaskIntoConstraints="NO" id="Jm6-Fx-GXX">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i91-Wi-V8P">
+                                <rect key="frame" x="200" y="450" width="200" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="k4Y-Zs-KXS"/>
+                                    <constraint firstAttribute="width" constant="200" id="l2N-b0-VcB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="55"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAU-g2-e5f"/>
+                                </connections>
+                            </button>
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleAspectFill" placeholderIntrinsicWidth="450" placeholderIntrinsicHeight="300" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUw-aG-4SO">
+                                <rect key="frame" x="90" y="150" width="420" height="300"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LUw-aG-4SO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5kY-zt-SXO"/>
+                            <constraint firstItem="Jm6-Fx-GXX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6fe-8U-HEz"/>
+                            <constraint firstItem="i91-Wi-V8P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CfE-dq-OVk"/>
+                            <constraint firstItem="i91-Wi-V8P" firstAttribute="top" secondItem="Jm6-Fx-GXX" secondAttribute="bottom" constant="-139" id="Ed8-Vv-QpQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Jm6-Fx-GXX" secondAttribute="trailing" id="F7y-LB-IrS"/>
+                            <constraint firstItem="LUw-aG-4SO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="Ik9-XO-AqS"/>
+                            <constraint firstItem="Jm6-Fx-GXX" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="LoT-bp-ATP"/>
+                            <constraint firstItem="LUw-aG-4SO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OZ1-Ev-hol"/>
+                            <constraint firstItem="Jm6-Fx-GXX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XIX-PY-4xO"/>
+                            <constraint firstItem="i91-Wi-V8P" firstAttribute="bottom" secondItem="Jm6-Fx-GXX" secondAttribute="bottom" constant="-80" id="bIw-Mz-rPv"/>
+                            <constraint firstItem="LUw-aG-4SO" firstAttribute="height" secondItem="Jm6-Fx-GXX" secondAttribute="height" multiplier="0.5" id="rTI-XE-Eoh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ed8-Vv-QpQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonView" destination="i91-Wi-V8P" id="zOD-RZ-oB3"/>
+                        <outlet property="mid" destination="LUw-aG-4SO" id="bLq-hx-t6K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace" width="621" height="1104"/>
+    </resources>
+</document>

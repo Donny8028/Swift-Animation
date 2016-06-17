@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="CustomPullToRefresh" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="D" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bz8-0Q-GiH">
+                    <rect key="frame" x="232" y="18" width="20" height="35"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N1-yQ-7Mc">
+                    <rect key="frame" x="290" y="18" width="20" height="35"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnG-ui-NZk">
+                    <rect key="frame" x="318" y="18" width="20" height="35"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-ve-MQy">
+                    <rect key="frame" x="260" y="18" width="22" height="35"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Y" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB0-k5-ejS">
+                    <rect key="frame" x="346" y="18" width="16" height="35"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="3N1-yQ-7Mc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3tB-nc-Ul0"/>
+                <constraint firstItem="wB0-k5-ejS" firstAttribute="baseline" secondItem="vnG-ui-NZk" secondAttribute="baseline" id="FVd-9w-An5"/>
+                <constraint firstItem="wB0-k5-ejS" firstAttribute="leading" secondItem="vnG-ui-NZk" secondAttribute="trailing" constant="8" symbolic="YES" id="Huc-4K-PoJ"/>
+                <constraint firstItem="3N1-yQ-7Mc" firstAttribute="leading" secondItem="0V4-ve-MQy" secondAttribute="trailing" constant="8" symbolic="YES" id="KAu-8W-SCp"/>
+                <constraint firstItem="vnG-ui-NZk" firstAttribute="leading" secondItem="3N1-yQ-7Mc" secondAttribute="trailing" constant="8" symbolic="YES" id="KCS-G1-w6G"/>
+                <constraint firstItem="vnG-ui-NZk" firstAttribute="baseline" secondItem="3N1-yQ-7Mc" secondAttribute="baseline" id="aqn-5N-aWO"/>
+                <constraint firstItem="0V4-ve-MQy" firstAttribute="baseline" secondItem="3N1-yQ-7Mc" secondAttribute="baseline" id="emj-KV-58E"/>
+                <constraint firstItem="0V4-ve-MQy" firstAttribute="leading" secondItem="Bz8-0Q-GiH" secondAttribute="trailing" constant="8" symbolic="YES" id="gXH-mI-NEk"/>
+                <constraint firstItem="3N1-yQ-7Mc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iFX-ZR-rNq"/>
+                <constraint firstItem="Bz8-0Q-GiH" firstAttribute="baseline" secondItem="0V4-ve-MQy" secondAttribute="baseline" id="tYN-6O-6DT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="339" y="132.5"/>
+        </view>
+    </objects>
+</document>

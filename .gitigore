@@ -1,0 +1,4 @@
+#for Xcode
+*.log
+.localized
+.DS_Store
