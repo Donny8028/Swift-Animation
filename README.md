@@ -68,7 +68,7 @@ This is my Swift projects for practising animation, inspired by [Allen Wang](htt
 
 All images used in projects from reference address.
 ## License
-Swift Animation is licensed uder the [MIT License](https://opensource.org/licenses/mit-license.php)
+Swift Animation is licensed under the [MIT License](https://opensource.org/licenses/mit-license.php)
 
 ##Contact me
 Facebook: [Doony Ho](https://www.facebook.com)
